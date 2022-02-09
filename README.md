@@ -15,11 +15,11 @@
   - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
 - [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
 - [ ] Apply data binding for views to help remove boilerplate code. (1 point)
-- [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
+- [x] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 ### App Walkthough GIF
 
-<img src= "http://g.recordit.co/VcFKpavve5.gif" width=250><br>
+<img src= "http://g.recordit.co/HaFT6IEu4N.gif" width=250><br>
 
 ### Notes
 

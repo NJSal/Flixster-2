@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterInside;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.example.flixster.DetailActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
@@ -86,7 +88,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 // else imageUrl = poster image
                 imageUrl = movie.getPosterPath();
             }
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            Glide
+                    .with(context)
+                    .load(imageUrl)
+                    .transform(new CenterInside(), new RoundedCorners(40))
+                    .into(ivPoster);
 
             // 1. Register the click listener on the whole container
             container.setOnClickListener(new View.OnClickListener() {

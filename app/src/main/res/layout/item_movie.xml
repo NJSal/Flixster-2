@@ -28,6 +28,7 @@
         android:fontFamily="sans-serif-light"
         android:textColor="#F4DB36"
         android:textSize="24sp"
+        android:textStyle="bold"
         tools:text="Spider-Man: No Way Home" />
 
     <TextView
