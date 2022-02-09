@@ -19,7 +19,7 @@
 
 ### App Walkthough GIF
 
-<img src= "http://g.recordit.co/HaFT6IEu4N.gif" width=250><br>
+<img src= "http://g.recordit.co/HaFT6IEu4N.gif" width=600><br>
 
 ### Notes
 
