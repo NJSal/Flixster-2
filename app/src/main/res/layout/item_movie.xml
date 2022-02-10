@@ -27,7 +27,7 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:fontFamily="sans-serif-light"
         android:textColor="#F4DB36"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:text="Spider-Man: No Way Home" />
 
@@ -41,4 +41,11 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:textColor="#FFFFFF"
         tools:text="Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man." />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_baseline_star_24" />
 </RelativeLayout>

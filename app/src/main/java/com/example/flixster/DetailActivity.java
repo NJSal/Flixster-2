@@ -48,7 +48,9 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
-        String voteCountText = "Votes = " + movie.getVoteCount();
+        int voteNum = movie.getVoteCount();
+        
+        String voteCountText = "Votes = " + Integer.toString(voteNum);
         voteCount.setText(voteCountText);
 
         AsyncHttpClient client = new AsyncHttpClient();
