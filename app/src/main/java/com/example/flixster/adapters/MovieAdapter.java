@@ -1,5 +1,6 @@
 package com.example.flixster.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -106,7 +109,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     // i.putExtra("title", movie.getTitle());
 
                     i.putExtra("movie", Parcels.wrap(movie));
-                    context.startActivity(i);
+                    // pair up the transition activities
+                    Pair<View, String> titleSharing = Pair.create((View) tvTitle, "transitTitle");
+
+                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity)context, titleSharing);
+
+
+                    context.startActivity(i, options.toBundle());
                 }
             });
 

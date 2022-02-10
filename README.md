@@ -9,7 +9,7 @@
 
 #### BONUS
 
-- [ ] Implement a shared element transition when user clicks into the details of a movie (1 point).
+- [x] Implement a shared element transition when user clicks into the details of a movie (1 point).
 - [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
   - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
   - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
@@ -19,15 +19,10 @@
 
 ### App Walkthough GIF
 
-<img src= "http://g.recordit.co/HaFT6IEu4N.gif" width=1024><br>
+<img src= "http://g.recordit.co/StjJPtXz09.gif" width=1024><br>
 
 ### Notes
 
-After completing the base Flixster app, the youtube api seems to produce a 400 network issue.
-
-Things that I attempted in order to solve the issue,
-- created a new emulator
-- forced stop & cleared the cache of the emulator's youtube app
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing

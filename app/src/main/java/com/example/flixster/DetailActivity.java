@@ -49,7 +49,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
         int voteNum = movie.getVoteCount();
-        
+
         String voteCountText = "Votes = " + Integer.toString(voteNum);
         voteCount.setText(voteCountText);
 
