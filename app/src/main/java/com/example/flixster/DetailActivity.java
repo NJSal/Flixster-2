@@ -28,7 +28,7 @@ public class DetailActivity extends YouTubeBaseActivity {
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;
-
+    TextView voteCount;
     YouTubePlayerView youTubePlayerView;
 
     @Override
@@ -39,6 +39,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle= findViewById(R.id.tvTitle);
         tvOverview = findViewById(R.id.tvOverview);
         ratingBar = findViewById(R.id.ratingBar);
+        voteCount = findViewById(R.id.voteCount);
         youTubePlayerView = findViewById(R.id.player);
 
         // no longer needed
@@ -47,6 +48,8 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
+        String voteCountText = "Votes = " + movie.getVoteCount();
+        voteCount.setText(voteCountText);
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieId()), new JsonHttpResponseHandler() {

@@ -38,4 +38,12 @@
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
         tools:text="Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man." />
+
+    <TextView
+        android:id="@+id/voteCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F4DB36"
+        android:textStyle="bold" />
 </LinearLayout>
